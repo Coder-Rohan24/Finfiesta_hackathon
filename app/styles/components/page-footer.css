@@ -1,0 +1,68 @@
+/* styles.css */
+
+.page-footer {
+  box-shadow: gray 0px 0px 10px;
+  width:90%;
+  font-size:15px;
+  background-color: #3b82f6; /* Tailwind's bg-blue-600 */
+  color: white;
+  padding: 24px; /* Tailwind's p-6 */
+  border-radius: 0.5rem; /* Tailwind's rounded-lg */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-lg */
+  margin-bottom: 2.5rem; /* Tailwind's mb-10 */
+}
+
+.page-footer h3 {
+  color:white;
+  font-size: 20px; /* Tailwind's text-2xl */
+  font-weight: bolder; /* Tailwind's font-bold */
+  margin-bottom: 1rem; /* Tailwind's mb-4 */
+  margin-top:1rem;
+}
+
+.page-footer .grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Default for mobile */
+  gap: 2rem; /* Tailwind's gap-8 */
+}
+
+@media (min-width: 768px) { /* Tailwind's md breakpoint */
+  .page-footer .grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+  }
+}
+
+.page-footer .text-center {
+  text-align: center;
+}
+
+.page-footer .icon {
+  font-size: 4rem; /* Tailwind's text-4xl */
+  margin-bottom: 1rem; /* Tailwind's mb-4 */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-footer h4 {
+  font-size: 1.25rem; /* Tailwind's text-xl */
+  font-weight: bold; /* Tailwind's font-bold */
+  margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+}
+
+.page-footer p {
+  margin: 0; /* Reset margin for paragraphs */
+}
+footer {
+  width:100%;
+  font-size:15px;
+  background-color: #1f2937; /* Equivalent to bg-gray-800 */
+  color: white; /* Equivalent to text-white */
+  padding: 1rem; /* Equivalent to p-4 */
+  padding-bottom: 0.5rem; /* Equivalent to pb-2 */
+}
+
+footer .container {
+  max-width: 1200px; /* Equivalent to container */
+  margin: 0 auto; /* Equivalent to mx-auto */
+  text-align: center; /* Equivalent to text-center */
+}

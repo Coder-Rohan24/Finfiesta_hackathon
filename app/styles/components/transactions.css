@@ -1,0 +1,481 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f9fafb; Light gray background */
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Main Content */
+  .main-content {
+    margin-top: 2.5rem;
+    padding: 1rem;
+  }
+  
+  /* Section Styling */
+  .section {
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .section-text {
+    font-size: 1.125rem;
+    color: #4b5563;
+  }
+  
+  /* Card Styling */
+  .card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.5rem;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Table Styling */
+  .table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+  }
+  
+  .table-header {
+    background-color: #f3f4f6;
+    text-align: left;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #4b5563;
+    text-transform: uppercase;
+  }
+  
+  .table-header th,
+  .table-body td {
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid #e5e7eb;
+  }
+  
+  .table-body td {
+    font-size: 1rem;
+  }
+  
+  .table-body .completed {
+    color: #059669;
+  }
+  
+  /* Form Styling */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .form-container {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  
+  .input-field,
+  .select-field {
+    border: 1px solid #d1d5db;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .button {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #1e40af;
+  }
+  
+  /* Footer */
+  .footer {
+    width:100%;
+    font-size:15px;
+    background-color: #1f2937; /* Equivalent to bg-gray-800 */
+    color: white; /* Equivalent to text-white */
+    padding: 1rem; /* Equivalent to p-4 */
+    padding-bottom: 0.5rem; /* Equivalent to pb-2 */
+  }
+  
+  footer .container {
+    max-width: 1200px; /* Equivalent to container */
+    margin: 0 auto; /* Equivalent to mx-auto */
+    text-align: center; /* Equivalent to text-center */
+  }
+
+/* recent transactions */
+
+/* Overall Page Styling */
+.transactions-page {
+  max-width: 1000px;
+  margin: 0rem auto;
+  width: 75%;
+  padding: 2rem;
+  background: #1e1e1e; /* Dark background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: #ffffff; /* White text */
+}
+
+/* Header Section */
+.transactions-header h2 {
+  font-size: 3.7rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #ffffff; /* White text */
+}
+
+.transactions-header p {
+  font-size: 1.7rem;
+  color: #aaaaaa; /* Light gray for contrast */
+}
+
+/* Table Styling */
+.transactions-content {
+  margin-top: 2rem;
+  background: #2a2a2a; /* Darker background for content */
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+.transactions-content h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffffff; /* White text */
+}
+
+.transactions-table-wrapper {
+  overflow-x: auto;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.4rem;
+  background: #252525; /* Dark table background */
+  color: #ffffff; /* White text */
+}
+
+.transactions-table th, 
+.transactions-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #3a3a3a; /* Darker border */
+}
+
+.transactions-table th {
+  background: #333333; /* Dark header background */
+  font-weight: bold;
+  color: #ffffff; /* White text */
+}
+
+.transactions-table tr:nth-child(even) {
+  background-color: #2e2e2e; /* Alternate row color */
+}
+
+.transactions-table tr:hover {
+  background-color: #3b3b3b; /* Highlight on hover */
+}
+
+/* Status Color */
+.status-text {
+  font-weight: bold;
+  color: #4caf50; /* Green for completed transactions */
+}
+
+/* Filter Section */
+.transactions-filter {
+  margin-top: 2rem;
+}
+
+.transactions-filter h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffffff; /* White text */
+}
+
+.filter-form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filter-date, .filter-select, .filter-button {
+  padding: 0.8rem;
+  font-size: 1.6rem;
+  border: 1px solid #555; /* Darker border */
+  border-radius: 8px;
+  background: #3a3a3a; /* Dark input fields */
+  color: white; /* White text */
+}
+
+.filter-button {
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.filter-button:hover {
+  background: #0056b3;
+}
+
+
+/* settings css*/
+
+/* Main Container */
+.settings-container {
+  max-width: 800px;
+  margin: 0rem auto;
+  width: 80%;
+  padding: 2rem;
+  background: #1e1e1e; /* Dark background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+/* Header Section */
+.settings-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.settings-header h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #aaaaaa;
+}
+
+.settings-header p {
+  font-size: 1.7rem;
+  color: #aaaaaa;
+}
+
+/* Sections */
+.settings-section {
+  background: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+.settings-section h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #aaaaaa;
+}
+
+/* Forms */
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.settings-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-input-group label {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.settings-input-group input {
+  padding: 10px;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #333;
+  color: white;
+  outline: none;
+}
+
+.settings-input-group input::placeholder {
+  color: #aaa;
+}
+
+/* Buttons */
+.settings-button {
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.settings-button:hover {
+  background: #0056b3;
+}
+
+/* Checkboxes */
+.settings-checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.settings-checkbox-group label {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .settings-container {
+    width: 90%;
+  }
+
+  .settings-header h2 {
+    font-size: 2rem;
+  }
+
+  .settings-header p {
+    font-size: 1rem;
+  }
+}
+.bg-gray-100 {
+  background-color: #f7fafc;
+  height: 100vh;
+}
+
+.bg-white {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin: auto;
+}
+
+.text-green-600 {
+  color: #16a34a;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.md-text-2xl {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+.text-gray-900 {
+  color: #1a202c;
+}
+
+.text-gray-600 {
+  color: #4a5568;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.bg-indigo-600 {
+  background-color: #4f46e5;
+}
+
+.bg-indigo-600:hover {
+  background-color: #4338ca;
+}
+
+.text-white {
+  color: white;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.success-box{
+  background-color: black;
+  border-color: #68d391;
+  color: #276749;
+  height: 100%;
+  padding-top:100px;
+}
+.font-color{
+  color:white;
+  font-size:20px;
+  font-weight: bold;
+}

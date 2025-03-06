@@ -1,0 +1,111 @@
+/* styles.css */
+.checkformlogincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #0a0a0a;
+  padding: 2rem;
+}
+
+.checkformlogininner {
+  width: 100%;
+  max-width: 500px;
+  height: 55vh;
+  min-height: 300px;
+  padding: 2rem;
+  background: #111;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.checkformloginheader {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #6366f1;
+  margin-bottom: 1rem;
+}
+
+.checkformloginsubtext {
+  color: #d1d5db;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.checkformloginform {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.checkformloginformtitle {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.checkformlogininputcontainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #222;
+  border-radius: 10px;
+  padding: 0.8rem 1.2rem;
+}
+
+.sr-only{
+  font-size: 1.7rem;
+}
+
+.checkformlogininputfield {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  color: #f3f4f6;
+  outline: none;
+}
+
+.checkformlogininputicon {
+  color: #9ca3af;
+  margin-left: 0.5rem;
+}
+
+.checkformloginbutton {
+  background: linear-gradient(90deg, #4f46e5, #4338ca);
+  padding: 1rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.checkformloginbutton:hover {
+  background: linear-gradient(90deg, #4338ca, #3730a3);
+  transform: scale(1.05);
+}
+
+.checkformloginfooter {
+  font-size: 1.1rem;
+  color: #9ca3af;
+  margin-top: 1.2rem;
+}
+
+.checkformloginfooter a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.checkformloginfooter a:hover {
+  text-decoration: underline;
+}
