@@ -27,7 +27,7 @@ const CheckoutForm = ({amount}) => {
       clientSecret: secretKey,
       elements,
       confirmParams:{
-        return_url: "http://localhost:4040/success"
+        return_url: "https://finfiesta-hackathon.vercel.app/success"
       }
     })
     console.log(error);

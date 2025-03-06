@@ -60,5 +60,3 @@ const CheckoutAmount = () => {
 }
 
 export default CheckoutAmount
-// https://localhost:4040/admin/stripepay?amount=324
-// http://localhost:4040/admin/stripepay?amount=342 working
