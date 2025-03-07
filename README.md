@@ -1,6 +1,6 @@
 # SecurePay
 
-SecurePay is a modern authentication and payment management system built with **Next.js**, **Auth0**, and **Stripe**. It features multi-factor authentication (MFA), WebAuthn support, context-aware authentication, login alerts, and device management.
+SecurePay is a modern authentication and payment management system built with **Next.js**,**WebAuthn** and **Stripe**. It features multi-factor authentication (MFA), WebAuthn support, context-aware authentication, login alerts, and device management.
 
 ## 🚀 Features
 
@@ -18,7 +18,7 @@ SecurePay is a modern authentication and payment management system built with **
 
 ### Clone the Repository
 ```sh
-$ git clone https://github.com/yourusername/finfiesta.git
+$ git clone https://github.com/Coder-Rohan24/Finfiesta_hackathon.git
 $ cd finfiesta
 ```
 
@@ -72,13 +72,11 @@ finfiesta/
 ## 🔗 API Endpoints
 
 ### Authentication
-- `POST /api/auth/login` → Login a user
-- `POST /api/auth/logout` → Logout a user
-- `GET /api/auth/profile` → Fetch logged-in user details
+- `POST /api/auth/[auth0]` → Login & Logout a user
+- `GET /profile` → Fetch logged-in user details
 
 ### Payments
-- `POST /api/stripe/checkout` → Initiate a Stripe payment
-- `POST /api/stripe/webhook` → Stripe webhook for payment updates
+- `POST /api/create-intent` → Initiate a Stripe payment
 
 ## 🏗️ Build & Deploy
 To build the project for production, run:
