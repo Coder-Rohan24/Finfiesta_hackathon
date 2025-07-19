@@ -1,8 +1,6 @@
-"use client"
+"use client";
 import Link from 'next/link';
-import React from 'react'
-
-
+import React from 'react';
 const CheckoutAmount = () => {
     const [name, setName] = React.useState('');
     const [amount, setAmount] = React.useState('');
@@ -15,7 +13,7 @@ const CheckoutAmount = () => {
         setAmount(Number(e.target.value));
         console.log(amount);
     }
-
+    
   return (
     <>
         <div className="checkformlogincontainer">
@@ -50,7 +48,7 @@ const CheckoutAmount = () => {
             </span>
           </div>
 
-          <button type="submit" className="checkformloginbutton" ><Link href={`/stripepay?amount=${amount}`}>Make Payment</Link></button>
+          <button className="checkformloginbutton"><Link href={`/stripepay?amount=${amount}&receiverName=${encodeURIComponent(name)}`}>Make Payment</Link></button>
 
         </form>
       </div>

@@ -8,7 +8,7 @@ import { loadStripe } from '@stripe/stripe-js';
 const Page = () => {
     const searchparams=useSearchParams();
     const amount=Number(searchparams.get('amount'));
-
+    const name=searchparams.get('receiverName');
     const stripePromise= loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHER_KEY);
     // console.log(process.env.NEXT_PUBLIC_STRIPE_PUBLISHER_KEY);
 
@@ -19,7 +19,7 @@ const Page = () => {
     }
   return (
     <Elements stripe={stripePromise} options={options}>
-        <CheckoutForm amount={amount}/>
+        <CheckoutForm amount={amount} receiverName={name}/>
     </Elements>
   )
 }

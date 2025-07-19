@@ -2,6 +2,7 @@ import React from "react";
 import { PageLayout } from "../components/page-layout";
 
 const PaymentSuccess = () => {
+  
   return (
     < PageLayout >
     <div className="h-screen flex items-center justify-center success-box">
